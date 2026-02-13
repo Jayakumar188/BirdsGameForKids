@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/bird_game_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game_activity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/page_"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/innocent_bird"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="138dp"
+            android:layout_marginBottom="180dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coin_connection_text"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/innocent_bird" />
+
+        <TextView
+            android:id="@+id/start_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TAP TO START THE GAME"
+            android:textColor="#00994C"
+            android:textSize="30dp"
+            android:textStyle="italic | bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/coin1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/coin" />
+
+        <ImageView
+            android:id="@+id/coin2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coin1"
+            app:srcCompat="@drawable/coin"
+            tools:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/enemy4_"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coin2"
+            app:srcCompat="@drawable/enemy4"
+            tools:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/enemy2_"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enemy4_"
+            app:srcCompat="@drawable/enemy2"
+            tools:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/enemy3_"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enemy2_"
+            app:srcCompat="@drawable/enemy3"
+            tools:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/coin_connection"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/coin" />
+
+        <TextView
+            android:id="@+id/coin_connection_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="0"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/coin_connection"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/heart1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.586"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/heart_filled_icon" />
+
+        <ImageView
+            android:id="@+id/heart2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/heart_filled_icon" />
+
+        <ImageView
+            android:id="@+id/heart3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.543"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/heart_filled_icon" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

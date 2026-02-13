@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/result_page_background"
+    tools:context=".resultActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_layout"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/playAgain"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/replay_button"
+            android:textStyle="italic | bold"
+            android:layout_margin="20dp"
+            android:textSize="18dp"
+            android:text="Play Again"/>
+        <ImageView
+            android:id="@+id/exit"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/home_button"
+            android:textStyle="italic | bold"
+            android:textSize="18dp"
+            android:text="exit"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+
+        app:layout_constraintBottom_toBottomOf="@id/button_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.224">
+
+        <TextView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:text="Congratulation, Your score is"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:textStyle="italic | bold" />
+
+        <TextView
+            android:id="@+id/score_text"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:textStyle="italic | bold" />
+
+        <TextView
+            android:id="@+id/highest_score_text"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Highest Score :"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:textStyle="italic | bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/back_button"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
